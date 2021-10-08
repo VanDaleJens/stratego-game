@@ -1,0 +1,46 @@
+<Window x:Class="Stratego.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stratego.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1500" Loaded="Window_Loaded">
+    <Grid x:Name="grBoard" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <ListBox x:Name="lbBattleLog" Grid.Column="6" Grid.Row="0" Margin="295,2,-396,-348" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="#FF3C3A3A" Foreground="White" BorderBrush="#FF1B1B1B"/>
+        <Button x:Name="btnNewGame" Content="New Game" Width="200" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-223,90,0,0" Grid.RowSpan="10" Background="#FFEE3C3C" FontSize="14" Foreground="White" Click="NewGame_Click"></Button>
+        <Button x:Name="btnQuitGame" Content="Quit Game" Width="200" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-223,17,0,0" Background="#FFEE3C3C" FontSize="14" Foreground="White" Click="QuitGame_Click" Grid.Row="9"/>
+        <ComboBox x:Name="cmbPlayer1Color" Width="200" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-223,50,0,0" Grid.RowSpan="10" SelectedIndex="0"></ComboBox>
+        <ComboBox x:Name="cmbPlayer2Color" Width="200" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-223,9,0,0" Grid.RowSpan="10" SelectedIndex="3"></ComboBox>
+        <Label Content="Player2" HorizontalAlignment="Left" Height="30" Margin="-270,9,0,0" VerticalAlignment="Top" Grid.RowSpan="10"/>
+        <Label Content="Player1" HorizontalAlignment="Left" Height="30" Margin="-270,50,0,0" VerticalAlignment="Top" Grid.RowSpan="10"/>
+
+        <Grid.RowDefinitions>
+          
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+    </Grid>
+</Window>
